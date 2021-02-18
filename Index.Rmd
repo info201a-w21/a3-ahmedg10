@@ -1,0 +1,41 @@
+---
+title: 'A3: Incarceration'
+author: "Ahmed Ghaddah"
+date: "02/17/20201"
+output: html_document
+---
+```{r setup, include = FALSE}
+source("analysis.R")
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### Introduction + Summary Information 
+In this report, I will be analyzing Vera's data to understand the details on the sources provided by their Incarceration Trends dataset. 
+
+Vera decided to to merged both their data with the data created by the Bureau of Justice Statistics-- the original jails dataset. Vera did this in order to "first=in-kind national dataset that can examine both jail and prison incarceration at the county level". 
+
+Vera developed four other publications about jail system regarding growth of prison in small cities, lack of data for covering race, rise of woman in prisons. The Article, [_Divided Justice: Trends in Black and White Incarceration 1990-2013_](https://www.vera.org/publications/divided-justice-black-white-jail-incarceration), caught my eye because they discussed that the BJS data was not compeletly accurate because they only caculate ethinicity during certain dates meaning they'd be missing a fare amount of data. Yet with that missing data regarding ethnicity, a black person is still *3.6x* more likely to be incarcerated in local jail *NATIONALLY* than white people. On top of that, after reading another article by Vera they stated that amongst large cities their amount of incarcerations has decreased, but small cities are still increasing.
+
+This lead my interest to look into variables regarding the black population in comparison to other ethicities Specifically, I am very intrested in finding the correlation of black people and comparing to other variables.  I am not very educated in the incarceration of my own people, African American, I strive to use this assignment to gain my knowledge and back up what I heard, statistically, on the issue of exceptionally large black incarceration level. 
+
+The variables I will be choosing: 
+
+
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
