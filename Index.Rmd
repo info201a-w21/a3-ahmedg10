@@ -4,13 +4,19 @@ author: "Ahmed Ghaddah"
 date: "02/17/20201"
 output: html_document
 ---
-```{r setup, include = FALSE}
-source("analysis.R")
+```{r setup1, include=FALSE}
+library(tidyverse)
+library(dplyr)
+library(lintr)
+library(styler)
+library(maps)
 ```
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+source("analysis.R")
 ```
+
+
 ### Introduction + Summary Information 
 In this report, I will be analyzing Vera's data to understand the details on the sources provided by their Incarceration Trends dataset. 
 
@@ -18,24 +24,105 @@ Vera decided to to merged both their data with the data created by the Bureau of
 
 Vera developed four other publications about jail system regarding growth of prison in small cities, lack of data for covering race, rise of woman in prisons. The Article, [_Divided Justice: Trends in Black and White Incarceration 1990-2013_](https://www.vera.org/publications/divided-justice-black-white-jail-incarceration), caught my eye because they discussed that the BJS data was not compeletly accurate because they only caculate ethinicity during certain dates meaning they'd be missing a fare amount of data. Yet with that missing data regarding ethnicity, a black person is still *3.6x* more likely to be incarcerated in local jail *NATIONALLY* than white people. On top of that, after reading another article by Vera they stated that amongst large cities their amount of incarcerations has decreased, but small cities are still increasing.
 
-This lead my interest to look into variables regarding the black population in comparison to other ethicities Specifically, I am very intrested in finding the correlation of black people and comparing to other variables.  I am not very educated in the incarceration of my own people, African American, I strive to use this assignment to gain my knowledge and back up what I heard, statistically, on the issue of exceptionally large black incarceration level. 
+This lead my interest to look into variables regarding the black population in comparison to other ethicities Specifically, I am very interested in finding the correlation of black people and comparing to other variables.  I am not very educated in the incarceration of my own people, African American, I strive to use this assignment to gain my knowledge and back up what I heard, statistically, on the issue of exceptionally large black incarceration level. 
 
-The variables I will be choosing: 
+I chose my exploratory questions to better grasp the black incarcerations in other locations. I have read about issues of black incarceration in Washington, California, New York, and Maryland. However, away from that my knowledge in other states was very low. So, I used the DPLYR function to further find locations surrounding the issue at hand. Out of all my exploration question I was insanely surprised that Dagget County, Utah has the highest ratio of jailed black people compared to those that reside in that county. Additionally, Dagget County, Utah had the highest jail population rate in all the counties in the US. I never heard of Dagget County, Utah and let alone expected that they had a rapidly rising issue in black incarceration levels. 
+
+#### The variables I will be looking at: 
+
+
+   *  black_jail_pop
+   * black_jail_pop_rate
+   * black_prison_rate 
+   * black_pop_15to64
+   * county_name & state (location)
+   * Other ethinicity jail_pop, jail_pop_rate,         jail_prison_rate, and pop_15to63
 
 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
+
+### Exploritory Problems using DPLYR functions 
+What counties have the highest black jail population?
+```{r, echo=FALSE}
+location_highest_blk_jail_pop
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+
+According to the most recent date, what county has the highest black population? 
+
+```{r, echo=FALSE}
+county_highest_blk_pop
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+What county has the highest ratio of black people jailed compared to all black people in their county? 
+
+```{r, echo=FALSE}
+highest_ratio_blk_jailed
+```
+
+
+
+
+
+What county had the highest difference between black people jailed and white people in jailed. In the most recent year?
+
+```{r, echo=FALSE}
+county_highest_blk_white_diff
+```
+
+
+
+
+
+
+Find the top 10 locations with highest black jail population rate
+
+```{r, echo=FALSE}
+top_10_locations
+```
+
+
+
+## Trends over Time Chart 
+```{r, echo=FALSE}
+race_growth_yearly
+```
+
+
+I choose this graph because I wanted to see the growth of the black jail population against other ethnic groups in New York County. I chose New York County because many African Americans reside there, and I wanted to find out, since it has one of the highest populations of African Americans, what would the jail incarceration levels look like? Although, New York County is the most populated county with black people, Black people only make up approximately 12.5% of New York County population. Yet it is shocking that they are significantly higher in the level of jail incarcerations than their fellow racial groups. This could be because the racial bias and brutality that the NYPD system has had, which has, just recently, been focused on. Sadly, before this year it has been constantly looked over.
+
+
+
+## Variable comparison chart 
+```{r, echo=FALSE}
+compare_black_jail_pop
+```
+
+
+
+
+I chose these variables in my comparison chart to see if their were a correlation in black jail population rising, if the black population would rise. From the graph I found that, in the beginning,  as the population was bigger so did the population of blacks in jail. However, at a certain point (between 1330000 - 1350000) that was no longer true. At that certain point, their was not much change in population, yet the growth of the black jailed population was still growing rapidly. I assumed that one of the factors of the black jail population growing would be because of that the bigger the black population. However, It looks to be their isn't a strong correlation to that statement. 
+
+
+
+
+
+
+
+
+## Heat Map
+```{r, echo=FALSE}
+black_jail_pop_rate_map_cali
+```
+
+
+
+When creating the heat map, I wanted to see the growth of Black jail population in California to further evaluate the counties/areas that produce the highest growth of black people in jail. I chose California because they have a long history of police brutality and wrongful arrests. So, I wanted to use that data to further explore the issue in California. Before creating the heat map, I thought areas in South California would have the highest population growth as LA county has the highest black population in California. Additionally, this assumption was developed due to the gentrification process that happens in LA county forcing black families to the "inner city/ Ghettos". However, after some research I found that North California is having a growth in black population. Sadly, this could result in some law enforcement feeling the need to be "more aware" due to developed racial baises. Thus, resulting in areas in north call to become more red --- indicating a higher jail rate popilation. 
