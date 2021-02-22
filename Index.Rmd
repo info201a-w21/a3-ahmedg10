@@ -10,6 +10,7 @@ library(dplyr)
 library(lintr)
 library(styler)
 library(maps)
+library(mapproj)
 ```
 
 ```{r setup, include=FALSE}
