@@ -45,19 +45,20 @@ I chose my exploratory questions to better grasp the black incarcerations in oth
 
 ### Exploritory Problems using DPLYR functions 
 What counties have the highest black jail population?
-```{r, echo=FALSE}
-location_highest_blk_jail_pop
-```
+
+
+
+
+`r location_highest_blk_jail_pop`
+
 
 
 
 
 According to the most recent date, what county has the highest black population? 
 
-```{r, echo=FALSE}
-county_highest_blk_pop
+`r county_highest_blk_pop`
 
-```
 
 
 
@@ -65,9 +66,8 @@ county_highest_blk_pop
 
 What county has the highest ratio of black people jailed compared to all black people in their county? 
 
-```{r, echo=FALSE}
-highest_ratio_blk_jailed
-```
+`r highest_ratio_blk_jailed`
+
 
 
 
@@ -75,20 +75,20 @@ highest_ratio_blk_jailed
 
 What county had the highest difference between black people jailed and white people in jailed. In the most recent year?
 
-```{r, echo=FALSE}
-county_highest_blk_white_diff
-```
+
+`r county_highest_blk_white_diff`
 
 
 
 
 
 
-Find the top 10 locations with highest black jail population rate
 
-```{r, echo=FALSE}
-top_10_locations
-```
+Find the top 5 locations with highest black jail population rate
+
+
+`r top_5_locations`
+
 
 
 
@@ -98,7 +98,7 @@ race_growth_yearly
 ```
 
 
-I choose this graph because I wanted to see the growth of the black jail population against other ethnic groups in New York County. I chose New York County because many African Americans reside there, and I wanted to find out, since it has one of the highest populations of African Americans, what would the jail incarceration levels look like? Although, New York County is the most populated county with black people, Black people only make up approximately 12.5% of New York County population. Yet it is shocking that they are significantly higher in the level of jail incarcerations than their fellow racial groups. This could be because the racial bias and brutality that the NYPD system has had, which has, just recently, been focused on. Sadly, before this year it has been constantly looked over.
+This graph illustrates the growth of the jail population between different ethnic groups in New York County. The summary stats are the jail population of different ethnic groups over time in New York City. From the graph we can see that black and latinx have always been the top two races with highest jail population. We can also observe that there is not a single moment in which the black jail population isn't the highest. Each dot pin point illustrates the jail population according to a certain year. Each dot is assigned a color to indicate the race the dot correlates with. I choose this graph because I wanted to see the growth of the black jail population against other ethnic groups in New York County. I chose New York County because many African Americans reside there, and I wanted to find out, since it has one of the highest populations of African Americans, what would the jail incarceration levels look like? Although, New York County is the most populated county with black people, Black people only make up approximately 12.5% of New York County population. Yet it is shocking that they are significantly higher in the level of jail incarcerations than their fellow racial groups. This could be because the racial bias and brutality that the NYPD system has had, which has, just recently, been focused on. Sadly, before this year it has been constantly looked over.
 
 
 
@@ -110,7 +110,7 @@ compare_black_jail_pop
 
 
 
-I chose these variables in my comparison chart to see if their were a correlation in black jail population rising, if the black population would rise. From the graph I found that, in the beginning,  as the population was bigger so did the population of blacks in jail. However, at a certain point (between 1330000 - 1350000) that was no longer true. At that certain point, their was not much change in population, yet the growth of the black jailed population was still growing rapidly. I assumed that one of the factors of the black jail population growing would be because of that the bigger the black population. However, It looks to be their isn't a strong correlation to that statement. 
+This graph illustrates the comparison between black population in New York County to the Black Jail Population in New York County. The summary statistics I used are the black_pop and black_jail_pop filtered to only focus on New York County. I used the time frame 2000-2018 to keep observation to be recent and have the graph be easier to read. Each dot pin points the black population compared to the black population. I chose these variables in my comparison chart to see if their were a correlation in black jail population rising, if the black population would rise. From the graph I found that, in the beginning,  as the population was bigger so did the population of blacks in jail. However, at a certain point (between 1330000 - 1350000) that was no longer true. At that certain point, their was not much change in population, yet the growth of the black jailed population was still growing rapidly. I assumed that one of the factors of the black jail population growing would be because of that the bigger the black population. However, It looks to be their isn't a strong correlation to that statement. 
 
 
 
@@ -126,4 +126,4 @@ black_jail_pop_rate_map_cali
 
 
 
-When creating the heat map, I wanted to see the growth of Black jail population in California to further evaluate the counties/areas that produce the highest growth of black people in jail. I chose California because they have a long history of police brutality and wrongful arrests. So, I wanted to use that data to further explore the issue in California. Before creating the heat map, I thought areas in South California would have the highest population growth as LA county has the highest black population in California. Additionally, this assumption was developed due to the gentrification process that happens in LA county forcing black families to the "inner city/ Ghettos". However, after some research I found that North California is having a growth in black population. Sadly, this could result in some law enforcement feeling the need to be "more aware" due to developed racial baises. Thus, resulting in areas in north call to become more red --- indicating a higher jail rate popilation. 
+This graph illustrates the the black_jail_pop_rate in each county according to the data's most recent year. The graph tells us what county had the highest growth rate of black jail population. Thus, we were using the most recent year' summary statistic of black_jail_pop_rate. The graph indicates, through colors, that red equates to the highest black population growth rate, orange is the middle value of the growth rate, and yellow is the smallest growth rate. When creating the heat map, I wanted to see the growth of Black jail population in California to further evaluate the counties/areas that produce the highest growth of black people in jail. I chose California because they have a long history of police brutality and wrongful arrests. So, I wanted to use that data to further explore the issue in California. Before creating the heat map, I thought areas in South California would have the highest population growth as LA county has the highest black population in California. Additionally, this assumption was developed due to the gentrification process that happens in LA county forcing black families to the "inner city/ Ghettos". However, after some research I found that North California is having a growth in black population, due to the amount of red, dark orange, and orange that make up a the North California Regions.  Sadly, this could result in some law enforcement feeling the need to be "more aware" due to developed racial baises. Thus, resulting in areas in north call to become more red --- indicating a higher jail rate popilation. 

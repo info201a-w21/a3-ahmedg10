@@ -66,12 +66,12 @@ county_highest_blk_white_diff <- incarceration %>%
   pull(location)
 
 
-# Find the top 10 locations with highest black jail population rate
-top_10_locations <- black_data %>%
+# Find the top 5 locations with highest black jail population rate
+top_5_locations <- black_data %>%
   filter(year == max(year)) %>%
-  top_n(10, wt = black_jail_pop_rate) %>%
+  top_n(5, wt = black_jail_pop_rate) %>%
   arrange(-black_jail_pop_rate) %>%
-  select(location, black_jail_pop_rate)
+  pull(location)
 
 
 
