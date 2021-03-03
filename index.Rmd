@@ -21,7 +21,7 @@ source("analysis.R")
 ### Introduction + Summary Information 
 In this report, I will be analyzing Vera's data to understand the details on the sources provided by their Incarceration Trends dataset. 
 
-Vera decided to to merged both their data with the data created by the Bureau of Justice Statistics-- the original jails dataset. Vera did this in order to "first=in-kind national dataset that can examine both jail and prison incarceration at the county level". 
+Vera decided to to merged both their data with the data created by the Bureau of Justice Statistics-- the original jails dataset. Vera did this in order to "first-of-a-kind national dataset that can examine both jail and prison incarceration at the county level". 
 
 Vera developed four other publications about jail system regarding growth of prison in small cities, lack of data for covering race, rise of woman in prisons. The Article, [_Divided Justice: Trends in Black and White Incarceration 1990-2013_](https://www.vera.org/publications/divided-justice-black-white-jail-incarceration), caught my eye because they discussed that the BJS data was not compeletly accurate because they only caculate ethinicity during certain dates meaning they'd be missing a fare amount of data. Yet with that missing data regarding ethnicity, a black person is still *3.6x* more likely to be incarcerated in local jail *NATIONALLY* than white people. On top of that, after reading another article by Vera they stated that amongst large cities their amount of incarcerations has decreased, but small cities are still increasing.
 
