@@ -127,34 +127,8 @@ black_jail_pop_rate_map_cali
 
 
 
-This graph illustrates the the black_jail_pop_rate in each county according to the data's most recent year. The graph tells us what county had the highest growth rate of black jail population. Thus, we were using the most recent year' summary statistic of black_jail_pop_rate. The graph indicates, through colors, that red equates to the highest black population growth rate, orange is the middle value of the growth rate, and yellow is the smallest growth rate. When creating the heat map, I wanted to see the growth of Black jail population in California to further evaluate the counties/areas that produce the highest growth of black people in jail. I chose California because they have a long history of police brutality and wrongful arrests. So, I wanted to use that data to further explore the issue in California. Before creating the heat map, I thought areas in South California would have the highest population growth as LA county has the highest black population in California. Additionally, this assumption was developed due to the gentrification process that happens in LA county forcing black families to the "inner city/ Ghettos". However, after some research I found that North California is having a growth in black population, due to the amount of red, dark orange, and orange that make up a the North California Regions.  Sadly, this could result in some law enforcement feeling the need to be "more aware" due to developed racial baises. Thus, resulting in areas in north call to become more red --- indicating a higher jail rate popilation. 
+This graph illustrates the the black_jail_pop_rate in each county according to the data's most recent year. The graph tells us what county had the highest growth rate of black jail population. Thus, we were using the most recent year' summary statistic of black_jail_pop_rate. The graph indicates, through colors, that red equates to the highest black population growth rate, orange is the middle value of the growth rate, and yellow is the smallest growth rate. When creating the heat map, I wanted to see the growth of Black jail population in California to further evaluate the counties/areas that produce the highest growth of black people in jail. I chose California because they have a long history of police brutality and wrongful arrests. So, I wanted to use that data to further explore the issue in California. Before creating the heat map, I thought areas in South California would have the highest population growth as LA county has the highest black population in California. Additionally, this assumption was developed due to the gentrification process that happens in LA county forcing black families to the "inner city/ Ghettos". However, after some research I found that North California is having a growth in black population, due to the amount of red, dark orange, and orange that make up a the North California Regions.  Sadly, this could result in some law enforcement feeling the need to be "more aware" due to developed racial biases. Thus, resulting in areas in north call to become more red --- indicating a higher jail rate population. 
 
 
 
 
-
-ui <- navbarPage (
-  "Co2 Analysis", 
-  tabPanel(
-    titlePanel("Plot"),
-  y_input, 
-       mainPanel( 
-         plotOutput(outputId = "scatter")
-  ) ,
-  )
-)
- tabPanel(
-    titlePanel("Introduction to Data"),
-    h1("Introduction"),
-    mainPanel(
-      p("I am going to evaluate and work with Our World in Data's dataset on CO2 
-        and Greenhouse Gas emissions that are present in our world. 
-        The data presents the CO2 and Gas Emissions data from 1750 to 2019. 
-        Earth has reached a point in which climate change is happening more 
-        rapidly then ever. The primary cause is due is the amount of build up of 
-        CO2 and Greenhouses that are released into our planet. This data set 
-        from World in Data will allow us to better evaluate and explore the 
-        C02 and greenhouse emission in our world over time. "),
-    
- )
- )
